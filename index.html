@@ -4,40 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css" >
     <title>Document</title>
 </head>
 <body>
     <div class="wrap">
         <div class="calculator">
-            <div class = "result"></div>
+            <div class = "display" id="display"></div>
             <div class="first-row">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>*</button>
+                <button class="number-btn">1</button>
+                <button class="number-btn" >2</button>
+                <button class="number-btn">3</button>
+                <button class = "operator-btn">*</button>
                 
             </div>
             <div class="second-row">
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>%</button>
+                <button class="number-btn">4</button>
+                <button class="number-btn">5</button>
+                <button class="number-btn">6</button>
+                <button class = "operator-btn">%</button>
                 
             </div>
             <div class="third-row">
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>C</button>
+                <button class="number-btn">7</button>
+                <button class="number-btn">8</button>
+                <button class="number-btn">9</button>
+                <button id ="clear">C</button>
                 
             </div>
             <div class="fourth-row">
-                <button>+</button>
-                <button>0</button>
-                <button>-</button>
-                <button>E</button>
+                <button class = "operator-btn">+</button>
+                <button class="number-btn">0</button>
+                <button class = "operator-btn" >-</button>
+                <button id="equals">=</button>
                 
             </div>
         </div>
