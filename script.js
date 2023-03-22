@@ -19,10 +19,12 @@ buttonClear.addEventListener('click', () => {
     operatorMode = true
 })
 
+display.textContent = 0
 
 
 buttonsNumber.forEach((button) => button.addEventListener('click', () => {if(operatorMode == true) { display.textContent = ''    
 operatorMode = false}
+if(display.textContent == 0) display.textContent = ''
 display.textContent += button.textContent;
 //return displayValue = display.textContent
 }));
@@ -91,9 +93,10 @@ const operate = (firstNumber, secondNumber, operator) => {
 }
 
 buttonEquals.addEventListener('click', () => {
+    if (!(firstNumber==undefined))
     operatorMode = true;
     secondNumber = Number(display.textContent)
-result = operate(firstNumber, secondNumber, operator)
+    result = operate(firstNumber, secondNumber, operator)
     secondNumber = null
     firstNumber = null
     display.textContent = `${result}`

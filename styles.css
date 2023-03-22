@@ -1,0 +1,43 @@
+
+body{
+    height: 50vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+
+#buttonstyle, #clear, #equals {
+    background-color: gray;
+    color:white;
+    font-size: 14px;
+    min-height: 50px;
+    min-width: 50px;
+    
+}
+
+#display {
+    background-color: gray;
+    font-size:32px;
+    color:white;
+    text-align: right;
+    flex-grow: 1;
+    margin-bottom: 2px;
+    
+}
+
+.first-row, .second-row, .third-row, .fourt-row {
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.calculator {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    background-color: black;
+    gap: 1px;
+}
