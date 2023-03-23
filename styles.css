@@ -6,7 +6,12 @@ body{
     justify-content: center;
     align-items: center;
 }
-  
+#buttonstyle.operator-btn {
+    background-color: orange;
+    color: black;
+}
+
+
 
 #buttonstyle, #clear, #equals {
     background-color: gray;
@@ -15,6 +20,10 @@ body{
     min-height: 50px;
     min-width: 50px;
     
+}
+
+#equals {
+    background-color: purple;
 }
 
 #display {
@@ -41,3 +50,4 @@ body{
     background-color: black;
     gap: 1px;
 }
+

@@ -76,9 +76,13 @@ const operate = (firstNumber, secondNumber, operator) => {
             result = multiply(firstNumber, secondNumber)
             break      
         case '/':
-            if(secondNumber=0)
+            if(secondNumber==0)
             {
-                display.textContent = 'DONT DO IT AGAIN'
+                result = 'DONT DO IT'
+                firstNumber = null;
+                secondNumber = null;
+                operator = null;
+                operatorMode = true
             }
             else {
 
@@ -93,9 +97,13 @@ const operate = (firstNumber, secondNumber, operator) => {
 }
 
 buttonEquals.addEventListener('click', () => {
+   if(secondNumber==undefined) {
+        secondNumber = Number(display.textContent)
+       
+   }
     if (!(firstNumber==undefined))
     operatorMode = true;
-    secondNumber = Number(display.textContent)
+    
     result = operate(firstNumber, secondNumber, operator)
     secondNumber = null
     firstNumber = null
